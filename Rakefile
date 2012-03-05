@@ -9,7 +9,7 @@ task :install => :submodules do
   linkables += Dir.glob('ruby/*') if want_to_install?('ruby (gems)')
   linkables += Dir.glob('{vim,vimrc}') if want_to_install?('vim')
   linkables += Dir.glob('zsh/zshrc') if want_to_install?('zsh')
-
+  linkables += Dir.glob('screenrc/screenrc') if want_to_install?('screenrc')
   skip_all = false
   overwrite_all = false
   backup_all = false
