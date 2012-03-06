@@ -1,3 +1,4 @@
+   renoirb's
      _     _           _
     | |   | |         | |
     | |___| |_____  __| | ____
@@ -8,7 +9,8 @@
     # Yet Another Dotfile Repo v0.8
     # Alpha Release Please Report Bugs
 
-    git clone https://github.com/skwp/dotfiles ~/.yadr
+    sudo apt-get install vim exuberant-ctags rake
+    git clone https://github.com/renoirb/dotfiles-1 ~/.yadr
     cd ~/.yadr && rake install
 
     # Your dotfiles are safe! YADR will not
