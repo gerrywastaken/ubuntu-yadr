@@ -9,7 +9,7 @@
     # Yet Another Dotfile Repo v0.8
     # Alpha Release Please Report Bugs
 
-    sudo apt-get install vim exuberant-ctags rake
+    sudo apt-get install vim exuberant-ctags rake zsh zsh-static zsh-lovers
     git clone https://github.com/renoirb/dotfiles-1 ~/.yadr
     cd ~/.yadr && rake install
 
