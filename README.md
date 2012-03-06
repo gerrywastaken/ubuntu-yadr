@@ -1,3 +1,4 @@
+     Ubuntu/PHP variant of
      _     _           _
     | |   | |         | |
     | |___| |_____  __| | ____
@@ -8,7 +9,9 @@
     # Yet Another Dotfile Repo v0.8
     # Alpha Release Please Report Bugs
 
-    git clone https://github.com/skwp/dotfiles ~/.yadr
+    sudo apt-get install vim exuberant-ctags vim php5-curl curl rake
+
+    git clone git://github.com/renoirb/ubuntu-yadr ~/.yadr
     cd ~/.yadr && rake install
 
     # Your dotfiles are safe! YADR will not
