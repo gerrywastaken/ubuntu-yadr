@@ -15,7 +15,7 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 fi
 
 # Don't change. The following determines where YADR is installed.
-yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
+yadr=`find -L ~ -type f -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
 
 # Configuration
 source $yadr/zsh/aliases
