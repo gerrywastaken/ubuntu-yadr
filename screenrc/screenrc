@@ -79,8 +79,8 @@ screen -t symfony   9 /usr/bin/tail ~/.current/app/logs/dev.log
 screen -t error     8 /usr/bin/sudo /usr/bin/tail -f /var/log/apache2/error.log
 screen -t consumer  7 /usr/bin/sudo /usr/bin/tail -f /var/log/syslog
 
-bind P screen -t ping_service /home/renoirb/workspace/sandbox/asyncmqpoc/app/console rabbitmq:consumer -m 5 ping_service
-bind O screen -t upload_picture_service /home/renoirb/workspace/sandbox/asyncmqpoc/app/console rabbitmq:consumer -m 5 upload_picture_service
+bind P screen -t ping_service ~/.current/app/console rabbitmq:consumer -m 5 ping_service
+bind O screen -t upload_picture_service ~/.current/app/console rabbitmq:consumer -m 5 upload_picture_service
 #screen -t asterisk	97	/usr/bin/sudo -u asterisk /usr/sbin/asterisk -cvvvvr
 #screen -t mytop		96	mytop
 #!#screen -t irssi		99	irssi -!   # use the -! so irssi disables autoconnection
