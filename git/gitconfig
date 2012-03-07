@@ -128,3 +128,6 @@
 
 [pager]
 	color = true
+[user]
+	name = Renoir Boulanger
+	email = ecrire@renoirboulanger.com

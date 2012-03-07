@@ -1,4 +1,4 @@
-   renoirb's
+     Ubuntu/PHP variant of
      _     _           _
     | |   | |         | |
     | |___| |_____  __| | ____
@@ -9,8 +9,9 @@
     # Yet Another Dotfile Repo v0.8
     # Alpha Release Please Report Bugs
 
-    sudo apt-get install vim exuberant-ctags rake zsh zsh-static zsh-lovers
-    git clone https://github.com/renoirb/dotfiles-1 ~/.yadr
+    sudo apt-get install vim exuberant-ctags vim php5-curl curl rake zsh zsh-static zsh-lovers
+
+    git clone git://github.com/renoirb/ubuntu-yadr ~/.yadr
     cd ~/.yadr && rake install
 
     # Your dotfiles are safe! YADR will not
