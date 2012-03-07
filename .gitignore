@@ -6,3 +6,4 @@ vim/.netrwhist
 vim/tmp
 .netrwhist
 bin/subl
+.secrets
