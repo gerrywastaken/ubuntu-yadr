@@ -1,7 +1,29 @@
+[github]
+	user = renoirb
+
 # set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
+
+[merge]
+  summary = true
+  verbosity = 1
+  tool = meld
+  stat = true
+[core]
+  autocrlf = false
+  editor = vim
+  excludesfile = ~/.yadr/gitignore_global
+  whitespace = trailing-space,space-before-tab
+[diff]
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
+  external = git-meld
+  renames = copies
+
 [color]
-  ui = true
+  ui = auto
+
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -12,6 +34,8 @@
   old = red bold
   new = green bold
 [alias]
+  poule = pull
+
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk
@@ -85,9 +109,6 @@
   svnl = svn log --oneline --show-commit
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[merge]
-  summary = true
-  verbosity = 1
 [apply]
   whitespace = nowarn
 [branch]
@@ -102,14 +123,12 @@
   excludesfile = ~/.yadr/gitignore_global
 [advice]
   statusHints = false
-[diff]
-  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
-  # instead of a/b/c/d as prefixes for patches
-  mnemonicprefix = true
+  pushNonFastForward = false
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
-[user]
-	name = Renoir Boulanger
-	email = renoir.boulanger@ericsson.com
+
+
+[pager]
+	color = true
