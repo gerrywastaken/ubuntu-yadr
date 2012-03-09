@@ -72,12 +72,11 @@ escape ^Jj
 # screen -t $BROWSER  		5 $BROWSER http://playerx.net/
 # screen -t wolframalpha	6 links http://www.wolframalpha.com
 
-screen -t vmstat		0	vmstat 10
-screen -t $myTOP		9	$myTOP
-screen -t rabbitmq  8 /usr/bin/sudo /usr/bin/tail -f /var/log/rabbitmq/rabbit@erenbou.log	
-screen -t symfony   7 /usr/bin/tail ~/app/logs/dev.log
-screen -t error     6 /usr/bin/sudo /usr/bin/tail -f /var/log/apache2/error.log
-screen -t consumer  5 /home/renoirb/workspace/sandbox/asyncmqpoc/app/console rabbitmq:consumer -m 5 ping_service
+#screen -t vmstat		0	vmstat 10
+#screen -t $myTOP		9	$myTOP
+screen -t error     8 /usr/bin/sudo /usr/bin/tail -f /var/log/apache2/error.log
+screen -t syslog    9 /usr/bin/sudo /usr/bin/tail -f /var/log/syslog
+
 #screen -t asterisk	97	/usr/bin/sudo -u asterisk /usr/sbin/asterisk -cvvvvr
 #screen -t mytop		96	mytop
 #!#screen -t irssi		99	irssi -!   # use the -! so irssi disables autoconnection
