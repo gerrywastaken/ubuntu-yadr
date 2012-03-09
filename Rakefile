@@ -68,4 +68,12 @@ def success_msg(action)
   puts "  (_______\_____|\____|_|      "
   puts ""
   puts "YADR has been #{action}. Please restart your terminal and vim."
+  puts ""
+  puts "=================================================================="
+  puts "Note: you may also create ~/.yadr/.secrets with your own variables."
+  puts "      to do so, just do the command:"
+  puts ""
+  puts "  cp ~/.yadr/.secrets.dist ~/.yadr/.secrets"
+  puts ""
+  puts "      edit then restart your terminal."
 end

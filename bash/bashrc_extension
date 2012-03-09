@@ -1,3 +1,1 @@
-alias vi="vim"
-alias current="cd ~/.current"
 alias secrets="cat ~/.yadr/.secrets"
