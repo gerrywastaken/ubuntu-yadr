@@ -1,3 +1,5 @@
+" http://nvie.com/posts/how-i-boosted-my-vim/
+" and http://amix.dk/vim/vimrc.html
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -47,12 +49,19 @@ set noswapfile
 set nobackup
 set nowb
 
+set showmatch     " set show matching parenthesis
+
+
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 
 set undodir=~/.vim/backups
 set undofile
+
+set pastetoggle=<F2>
+    " when in insert mode, ready to paste, if you press <F2>, Vim will 
+    " switch to paste mode, disabling all kinds of smartness and just pasting a whole buffer of text.
 
 " ================ Indentation ======================
 
@@ -61,7 +70,7 @@ set smartindent
 set smarttab
 set shiftwidth=2
 set softtabstop=2
-set tabstop=2
+set tabstop=4
 set expandtab
 
 filetype plugin on

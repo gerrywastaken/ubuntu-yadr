@@ -1,0 +1,33 @@
+<VirtualHost *:80>
+ # MAGIC DEFAULT VIRTUALHOST
+ #
+ # include the server name in the filenames used to satisfy requests
+ # So, in /home/username/workspace/projectname/subfolder workspace 
+ # will be available from http://projectname.subfolder.username/, 
+ # but you have to make sure /etc/hosts knows it.
+
+ VirtualDocumentRoot /home/%username%/workspace/%1/%2/web
+
+ # this log format can be split per-virtual-host based on the first field
+ LogFormat "%V %h %l %u %t \"%r\" %s %b" vcommon
+ CustomLog  /var/log/apache2/access_log vcommon
+
+ # Possible values include: debug, info, notice, warn, error, crit,
+ # alert, emerg.
+ LogLevel warn
+
+ php_flag log_errors on
+ php_admin_value error_log "/var/log/apache2/%username%.%1.%2.php.log"
+
+ <Directory />
+     Options Indexes MultiViews FollowSymLinks
+     AllowOverride All
+     DirectoryIndex index.php index.html
+ </Directory>
+
+ <IfModule mpm_itk_module>
+     AssignUserId %username% users
+     # Ajuster a votre utilisateur et groupe
+ </IfModule>
+</VirtualHost>
+

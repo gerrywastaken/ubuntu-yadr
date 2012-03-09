@@ -117,6 +117,10 @@
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = tracking
+[core]
+  autocrlf = false
+  editor = vim
+  excludesfile = ~/.yadr/gitignore_global
 [advice]
   statusHints = false
   pushNonFastForward = false
@@ -128,6 +132,3 @@
 
 [pager]
 	color = true
-[user]
-	name = Renoir Boulanger
-	email = ecrire@renoirboulanger.com
