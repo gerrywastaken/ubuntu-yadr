@@ -9,8 +9,12 @@
     # Yet Another Dotfile Repo v0.8
     # Alpha Release Please Report Bugs
 
-    sudo apt-get install vim exuberant-ctags vim php5-curl curl rake conky zsh zsh-static zsh-lovers
-
+    sudo apt-get install vim exuberant-ctags vim php5-curl curl rake conky libpcre-++ python-dev
+    pear install doc.php.net/pman
+    sudo pear install PHP_CodeSniffer
+    
+    https://github.com/berkes/vim-pman.git: #TODO
+    <>
     git clone git://github.com/renoirb/ubuntu-yadr ~/.yadr
     cd ~/.yadr && rake install
 

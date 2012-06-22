@@ -285,3 +285,6 @@
 [submodule "vim/bundle/joestelmach-javaScriptLint"]
 	path = vim/bundle/joestelmach-javaScriptLint
 	url = git://github.com/joestelmach/javaScriptLint.vim
+[submodule "vim/bundle/vim-pman"]
+	path = vim/bundle/vim-pman
+	url = git://github.com/berkes/vim-pman.git
