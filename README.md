@@ -13,8 +13,6 @@
     pear install doc.php.net/pman
     sudo pear install PHP_CodeSniffer
     
-    https://github.com/berkes/vim-pman.git: #TODO
-    <>
     git clone git://github.com/renoirb/ubuntu-yadr ~/.yadr
     cd ~/.yadr && rake install
 
