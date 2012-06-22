@@ -288,3 +288,6 @@
 [submodule "vim/bundle/vim-pman"]
 	path = vim/bundle/vim-pman
 	url = git://github.com/berkes/vim-pman.git
+[submodule "php/php-cs-fixer"]
+	path = php/php-cs-fixer
+	url = git://github.com/fabpot/PHP-CS-Fixer.git
