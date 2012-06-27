@@ -4,6 +4,7 @@ desc "Hook our dotfiles into system-standard positions."
 task :install => :submodules do
   # this has all the linkables from this directory.
   linkables = []
+  linkables += Dir.glob('sublime-text-2/config') if want_to_install?('.config/sublime-text-2')
   linkables += Dir.glob('git/*') if want_to_install?('git')
   linkables += Dir.glob('irb/*') if want_to_install?('irb/pry')
   linkables += Dir.glob('ruby/*') if want_to_install?('ruby (gems)')

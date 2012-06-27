@@ -7,7 +7,8 @@
     (_______\_____|\____|_|
 
     # Yet Another Dotfile Repo v0.8
-    # Alpha Release Please Report Bugs
+
+    # Ubuntu+PHP+SublimeText2 fork
 
     sudo apt-get install vim exuberant-ctags vim php5-curl curl rake conky libpcre-++ python-dev
     pear install doc.php.net/pman
@@ -36,6 +37,13 @@ from scouring other people's dotfile repos, blogs, and projects.
   * Pick one tool and use it everywhere: vim-ize everything
   * **NEW Beautiful, easy to read and small vimrc**
   * **NEW No key overrides or custom hackery in vimrc, everything in well factored snippets in .vim/plugin/settings**
+
+
+## What is this variant for?
+Ubuntu user who uses either vim/Sublime Text for PHP Symfony2. A distribution if you want :)
+
+The idea between this port is that I wanted to have YADR implementation but specialized for `PHP`, `SublimeText2`, `PHP_CodeSniffer`, and also some
+other tools that is neat to have while doing PHP Development. AND HAVE THAT AUTO COMPLETE. On all machines that I use.
 
 
 ## Why is this not a fork of Janus?
