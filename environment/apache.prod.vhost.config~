@@ -1,0 +1,32 @@
+#
+# using APACHE PRODUCTION ENVIRONMENT specified in project INSTALL.md
+# 
+<VirtualHost *:80>
+    ServerAdmin hello@renoirboulanger.com
+
+    DocumentRoot /home/project/workspace/clientName/project/web
+    <IfModule mpm_itk_module>
+          AssignUserId project users
+    </IfModule>
+
+    LogLevel crit
+    #        ------\
+    #               -> In prod, you may put crit, error
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    <Directory />
+       Options Indexes FollowSymLinks MultiViews
+       AllowOverride All
+       DirectoryIndex app.php index.php index.html
+       <IfModule rewrite_module>
+          # See INSTALL.md for compilation instructions
+          # You can regenerate file from the project using:
+          # app/console router:dump-apache --env=prod > app/apache.router.cache
+          Include /home/project/workspace/clientName/project/app/apache.router.cache
+       </IfModule>
+     </Directory>
+</VirtualHost>

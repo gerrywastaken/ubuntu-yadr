@@ -1,0 +1,25 @@
+{
+	"auto_upgrade_last_run": 1340805582,
+	"installed_packages":
+	[
+		"CTags for PHP",
+		"DocBlockr",
+		"Git",
+		"IcedCoffeeScript",
+		"LESS",
+		"Package Control",
+		"PHP-Twig",
+		"Phpcs",
+		"PHPUnit",
+		"Pman",
+		"sublime-csspecific",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimePeek",
+		"SystemVerilog",
+		"TODO Control",
+		"Twitter Bootstrap Snippets",
+		"Xdebug",
+		"ZenCoding"
+	]
+}

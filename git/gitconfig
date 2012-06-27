@@ -132,3 +132,8 @@
 
 [pager]
 	color = true
+[user]
+	name = erenbou
+	email = renoir.boulanger@ericsson.com
+[http]
+	proxy = www-proxy.ericsson.se:8080

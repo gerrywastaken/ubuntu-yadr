@@ -1,0 +1,11 @@
+gconftool-2 -s /desktop/gnome/url-handlers/netbeans/enabed --type Boolean true
+gconftool-2 -s /desktop/gnome/url-handlers/netbeans/command /opt/netbeans/bin/netbeans --open %f:%l --type String
+sudo vi /opt/netbeans/etc/netbeans.conf   i
+
+ADD TO default options:
+-J-Dorg.netbeans.modules.dbgp.level=400 
+
+References:
+  - http://wiki.netbeans.org/HowToConfigureXDebug
+  - http://2bits.com/articles/setting-up-xdebug-dbgp-for-php-on-debian-ubuntu.html
+  - http://netbeans.org/kb/docs/php/configure-php-environment-ubuntu.html

@@ -1,0 +1,5 @@
+
+#
+# Forcing SSL as per DEPLOYING.md suggests
+#
+        - { path: ^/, role: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

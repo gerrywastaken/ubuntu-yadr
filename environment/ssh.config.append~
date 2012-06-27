@@ -1,0 +1,23 @@
+##
+## Provide a different IdentityFile per host
+##
+#
+# See .yadr UBUNTU_INSTALL_PROCEDURE.md file on =Topic: USE A DIFFERENT SSH KEY
+#
+#
+# To map a workspace to a specific ssh key
+#
+# I want to use a different key (IdentityFile parameter), just map Host to the HostName
+#
+#
+# e.g. from:
+#    git clone ssh://YOURCONFIGUREDUSER@repositoryhost/project.git
+# to:
+#    git clone ssh://YOURCONFIGUREDUSER@use.specific.key.host/project.git
+#
+# Will use the provided `IdentityFile` key
+#
+Host use.specific.key.host
+HostName repositoryhost
+User YOURCONFIGUREDUSER
+IdentityFile ~/.ssh/specific_dsa

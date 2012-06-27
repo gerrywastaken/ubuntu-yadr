@@ -1,0 +1,15 @@
+{
+    // Execute the sniffer on file save
+    "phpcs_execute_on_save": false,
+
+    // Show the error list after save.
+    "phpcs_show_errors_on_save": false,
+
+    "phpcs_additional_args": {
+        "--standard": "Symfony2",
+        "-n": ""
+    },
+
+    // Path to where you have the php-cs-fixer installed
+    "php_cs_fixer_executable_path": "/usr/bin/php-cs-fixer"
+}

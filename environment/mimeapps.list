@@ -1,0 +1,7 @@
+#~/.local/share/applications/mimeapps.list
+[Default Applications]
+application/x-genesis-rom=gedit.desktop
+
+[Added Associations]
+application/x-genesis-rom=gedit.desktop;
+application/x-httpd-php=netbeans.desktop
